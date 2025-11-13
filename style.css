@@ -1,0 +1,48 @@
+/* ============================================================== */
+/* Font: import */
+/* ============================================================== */
+@font-face {
+  font-family: customfont;
+  src: url('ABCDiatypeVariable-Trial.ttf'); /* 🔠 Font File Name */
+}
+
+
+/* ============================================================== */
+/* Layout */
+/* ============================================================== */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+  transition: background-color 1s 1s;
+  font-family: CustomFont;
+  font-size: 40px;  /* 🔠 Font Size */
+  color: #ffffff; /* 🔠 Font Color */
+}
+
+#weatherInfo { 
+  position: fixed;
+  bottom: 100px;  /* 🔠⬇️ Weather Description Position */
+  left: 10px;    /* 🔠⬅️ Weather Description Position */
+  z-index: 2;
+  pointer-events: none;
+}
+
+#weatherTemp { 
+  position: fixed;
+  bottom: 10px;  /* 🔠⬇️ Weather Temperature Position */
+  right: 10px;   /* 🔠➡️ Weather Temperature Position */
+  z-index: 2;
+  pointer-events: none;
+}
+
+#addIframe {
+  position: fixed;
+  top: -42px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 42px);
+  border: none;
+}
+
